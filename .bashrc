@@ -27,20 +27,11 @@ if [ "$TERM" = "linux" ]; then
 	echo -en "\e]PFFEEEEE"
 fi
 
-export EDITOR="vim"
+export EDITOR='vim'
 export VISUAL=$EDITOR
-export PAGER="less"
+export PAGER='less'
 
 PS1="\[\033[1m\]\W \$\[\033[0m\] "
-PROMPT_COMMAND='echo -n -e "\033k\033\\"'
-
-# export OPENVTPREF="DISPLAY= sudo openvt -sw -- sudo -u $USER "
-export OPENVTPREF="sudo openvt -sw -- sudo -u $USER "
-alias lbreakout2="$OPENVTPREF lbreakout2"
-alias pingus="$OPENVTPREF pingus"
-alias rocksndiamonds="$OPENVTPREF rocksndiamonds"
-alias fbi="$OPENVTPREF fbi"
-alias fbpdf="$OPENVTPREF fbpdf"
 
 alias ls='/bin/ls -h -CF --color'
 alias ix="curl -n -F 'f:1=<-' http://ix.io"
