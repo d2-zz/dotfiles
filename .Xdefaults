@@ -1,0 +1,97 @@
+! File: ~/.Xdefaults
+! ------------------
+
+
+! X Cursor theme ----------------------
+
+Xcursor.theme: core
+
+
+! Xft settings ------------------------
+
+Xft.antialias: 1
+! Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: 3
+
+
+! Colors ------------------------------
+
+
+! gray
+*color0:  black
+*color8:  seashell4
+*color7:  seashell3
+*color15: white
+*colorBD: seashell1
+! red
+*color1:  IndianRed
+*color9:  IndianRed1
+! green
+*color2:  DarkSeaGreen4
+*color10: DarkSeaGreen3
+! yellow
+*color3:  burlywood3
+*color11: burlywood1
+! blue
+*color4:  #3d515e
+*color12: SkyBlue2
+! magenta
+*color5:  #383535
+*color13: PaleVioletRed2
+! cyan
+*color6:  PaleTurquoise4
+*color14: PaleTurquoise2
+
+
+! xterm settings ----------------------
+
+xterm*toolBar:        false
+xterm*scrollBar:      false
+xterm*background:     black
+xterm*foreground:     seashell3
+xterm*font:           -*-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1
+xterm*boldFont:       fixed
+xterm*colorBDMode:    true
+! xterm*alwaysBoldMode: false
+! xterm*boldMode:       false
+xterm*dynamicColors:  true
+
+
+! URxvt settings ----------------------
+
+! URxvt.font:     -rfx2-*-medium-*-*-*-*-*-*-*-*-*-iso10646-1
+! URxvt.boldFont: -rfx2-*-bold-*-*-*-*-*-*-*-*-*-iso10646-1
+URxvt.font:           -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1,\
+                      -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1,\
+                      -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1
+URxvt.boldFont:       -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1,\
+                      -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1,\
+                      -misc-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1
+
+URxvt.termName:          rxvt
+URxvt.scrollBar:         false
+URxvt.loginShell:        true
+URxvt.saveLines:         8192
+URxvt.inheritPixmap:     false
+URxvt.jumpScroll:        true
+URxvt.internalBorder:    2
+URxvt.cursorBlink:       f0
+URxvt.background:        black
+URxvt.foreground:        seashell3
+! URxvt.underlineColor:    #999999
+URxvt.borderless:        true
+URxvt.pointerBlank:      true
+URxvt.pointerBlankDelay: 5
+
+URxvt.perl-ext-common:   default,matcher
+URxvt.urlLauncher:       /usr/bin/firefox
+URxvt.matcher.button:    1
+URxvt.matcher.pattern.0:
+    (?:https?:\\/\\/|ftp:\\/\\/|news:\\/\\/|mailto:|file:\\/\\/|\\bwww\\.)\n\
+    [a-zA-Z0-9\\x{0410}-\\x{044F}\\-\\@;\\/?:&=%\\$_.+!*\\x27,~#]*\n\
+    (\n\
+    \\([a-zA-Z0-9\\x{0410}-\\x{044F}\\-\\@;\\/?:&=%\\$_.+!*\\x27,~#]*\\)|\n\
+    [a-zA-Z0-9\\x{0410}-\\x{044F}\\-\\@;\\/?:&=%\\$_+*~]\n\
+    )+
+
