@@ -11,7 +11,7 @@ Xcursor.theme: core
 
 Xft.antialias: 1
 ! Xft.rgba: rgb
-Xft.hinting: true
+! Xft.hinting: true
 Xft.hintstyle: 3
 
 
